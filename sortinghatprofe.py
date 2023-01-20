@@ -38,16 +38,12 @@ elif g == 4:
     RACENCLAW += 1
 else:
     error = error + 1
-
-if error == 0:
-    print('Enhorabuena eres de: ')
-    if GRYFFINDOR >= RACENCLAW and GRYFFINDOR >= HUFFLEPUFF and GRYFFINDOR >= SLYTHERIN:
-        print('🦁 Gryffindor!')
-    elif RACENCLAW >= HUFFLEPUFF and RACENCLAW >= SLYTHERIN:
-        print('🦅 Ravenclaw!')
-    elif HUFFLEPUFF >= RACENCLAW:
-        print('🦡 Hufflepuff!')
-    else:
-        print('🐍 Slytherin!')
+print('Enhorabuena eres de: ')
+if GRYFFINDOR >= RACENCLAW and GRYFFINDOR >= HUFFLEPUFF and GRYFFINDOR >= SLYTHERIN:
+   print('🦁 Gryffindor!')
+elif RACENCLAW >= HUFFLEPUFF and RACENCLAW >= SLYTHERIN:
+    print('🦅 Ravenclaw!')
+elif HUFFLEPUFF >= RACENCLAW:
+    print('🦡 Hufflepuff!')
 else:
-    print('error de entrada, porfavor ponga numeros correctos y pruebe de nuevo')
+    print('🐍 Slytherin!')

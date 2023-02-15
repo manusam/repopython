@@ -38,16 +38,19 @@ elif g == 4:
     ravenclaw += 1
 else:
     error = error + 1
-
-if error == 0:
-    print('Enhorabuena eres de: ')
-    if gryffindor >= ravenclaw and gryffindor >= hufflepuff and gryffindor >= slytherin:
-        print('🦁 Gryffindor!')
-    elif ravenclaw >= hufflepuff and ravenclaw >= slytherin:
-        print('🦅 Ravenclaw!')
-    elif hufflepuff >= ravenclaw:
-        print('🦡 Hufflepuff!')
-    else:
-        print('🐍 Slytherin!')
+print('Enhorabuena eres de: ')
+if gryffindor > ravenclaw and gryffindor > hufflepuff and gryffindor > slytherin:
+   print('🦁 Gryffindor!')
+elif ravenclaw > gryffindor and ravenclaw > hufflepuff and ravenclaw > slytherin:
+    print('🦅 Ravenclaw!')
+elif hufflepuff > ravenclaw and hufflepuff > gryffindor and hufflepuff > slytherin:
+    print('🦡 Hufflepuff!')
+elif slytherin > ravenclaw and slytherin > hufflepuff and slytherin > gryffindor:
+    print('🐍 Slytherin!')
 else:
-    print('error de entrada, porfavor ponga numeros correctos y pruebe de nuevo')
+    print('---Varias casas---\n')
+    print('  Lista de puntos\n','------------------')
+    print(' [ Gryffindor =', gryffindor,']' ,'\n','------------------') 
+    print(' [ Ravenclaw  =', ravenclaw,']' ,'\n','------------------')
+    print(' [ Hufflepuff =', hufflepuff,']' ,'\n','------------------')
+    print(' [ Slytherin  =', slytherin,']' ,'\n','------------------')

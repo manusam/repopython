@@ -1,0 +1,5 @@
+num1 = int(input('escriba el 1º numero: '))
+num2 = int(input('escriba el 2º numero: '))
+num3 = int(input('escriba el 3º numero: '))
+print('Primera operacion',(num1 + num2)*num3)
+print('Segunda operacion', (num1 + num3)+(num2 * num3))
